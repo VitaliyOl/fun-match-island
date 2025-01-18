@@ -46,6 +46,9 @@ export default defineConfig(({ command }) => {
         },
       }),
     ],
+    server: {
+      host: true,
+    },
     css: {
       preprocessorOptions: {
         scss: {
