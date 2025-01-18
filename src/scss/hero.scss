@@ -1,0 +1,150 @@
+.hero {
+  position: relative;
+  margin-top: 40px;
+  background: url('../img/hero/hero-bg@1x.png') no-repeat center center;
+  background-size: contain;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+
+  width: 1200px;
+  height: 869px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  align-items: center;
+
+  @include media(mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin-top: -10px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+  @include media(desktop) {
+    background: url('../img/hero/hero-bg@2x.png') no-repeat center center;
+    background-size: contain;
+  }
+
+  @include media(mobile) {
+    width: 320px;
+    padding: 30px 10px;
+    text-align: left;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .container {
+    grid-column: 1 / 2;
+    z-index: 2;
+    padding-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #342829;
+    margin-top: 175px;
+    margin-left: 90px;
+
+    @include media(mobile) {
+      margin-top: 10px;
+      margin-left: 20px;
+      transform: translateY(-81px) translateX(-20px);
+    }
+
+    h1 {
+      width: 488px;
+      height: 166px;
+      margin-bottom: 26px;
+
+      @include media(mobile) {
+        width: 229px;
+        height: 53px;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      width: 410px;
+      height: 85px;
+      margin-bottom: 88px;
+
+      @include media(mobile) {
+        width: 186px;
+        height: 42px;
+        margin-bottom: 55px;
+      }
+    }
+
+    .btn {
+      width: 279px;
+      height: 67px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ff8000;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 0 auto;
+      @include media(mobile) {
+        width: 224px;
+        height: 50px;
+      }
+
+      &:hover {
+        background-color: #cc6600;
+      }
+    }
+  }
+
+  .hero-images {
+    grid-column: 2 / 3;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include media(desktop) {
+  .hero-girl {
+    width: 368px;
+    height: 434px;
+    transform: translateY(189px) translateX(-68px);
+    z-index: 1;
+  }
+
+  .hero-island {
+    width: 614px;
+    height: 322px;
+    transform: translateY(58px) translateX(-20px);
+  }
+}
+
+@include media(mobile) {
+  .hero-girl {
+    width: 104px;
+    height: 122px;
+    transform: translateY(133px) translateX(109px);
+    z-index: 100;
+  }
+
+  .hero-island {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+}
