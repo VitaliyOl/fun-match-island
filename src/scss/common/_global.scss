@@ -5,6 +5,16 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding: 80px 72px ;
+    padding: 80px 72px;
+  }
+}
+
+main {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #0f6691;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
