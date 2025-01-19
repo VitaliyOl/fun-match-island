@@ -1,0 +1,199 @@
+.reviews {
+  background: linear-gradient(180deg, #0f6691 0%, #024d55 100%);
+  padding: 24px 36px;
+  min-height: 303px;
+  position: relative;
+
+  @include media(desktop) {
+    padding: 40px;
+    min-height: 837px;
+  }
+}
+
+.reviews-title {
+  font-family: 'Piedra', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #f3be00;
+  text-align: center;
+  margin-bottom: 26px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+
+@include media(desktop) {
+  .swiper-container-reviews {
+    display: none;
+  }
+}
+
+.reviews-grid {
+  position: relative;
+
+  @include media(mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+}
+
+@include media(desktop) {
+  .review-card.vertical.card1 {
+    position: absolute;
+    top: 10px;
+    left: 47px;
+  }
+
+  .review-card.vertical.card3 {
+    position: absolute;
+    top: 209px;
+    right: 37px;
+  }
+
+  .review-card.horizontal.card2 {
+    position: absolute;
+    top: 64px;
+    right: 375px;
+  }
+
+  .review-card.horizontal.card4 {
+    position: absolute;
+    top: 400px;
+    left: 272px;
+  }
+}
+
+.review-card {
+  position: relative;
+  background: #e6dfc5;
+  border-radius: 47px;
+  text-align: center;
+
+  @include media(mobile) {
+    width: 248px;
+    height: 156px;
+    margin: 10px auto;
+    border-radius: 34px;
+  }
+}
+
+@include media(desktop) {
+  .review-card.vertical {
+    width: 249px;
+    height: 345px;
+  }
+
+  .review-card.horizontal {
+    width: 338px;
+    height: 212px;
+  }
+}
+
+.frame-vertical,
+.frame-horizontal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 10px;
+
+  @include media(desktop) {
+    border-radius: 28px;
+  }
+}
+
+.cloud-1,
+.cloud-2,
+.cloud-3,
+.cloud-4 {
+  position: absolute;
+  z-index: 2;
+}
+
+.cloud-1 {
+  bottom: -34px;
+  left: -30px;
+}
+
+.cloud-2 {
+  bottom: -30px;
+  left: 4px;
+}
+
+.cloud-3 {
+  bottom: -40px;
+  left: 72px;
+}
+
+.cloud-4 {
+  bottom: -18px;
+  right: 0px;
+}
+
+.review-content {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 39px;
+  z-index: 1;
+
+  @include media(desktop) {
+    padding: 43px;
+  }
+}
+
+.review-author {
+  font-family: 'Mali', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+@include media(desktop) {
+  .review-author.vert {
+    margin-bottom: 63px;
+  }
+
+  .review-author.horiz {
+    margin-bottom: 12px;
+  }
+}
+
+.review-text {
+  font-family: 'Mali', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000000;
+
+  @include media(mobile) {
+    width: 224px;
+    margin: 0 auto;
+  }
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+@include media(mobile) {
+  .cloud-1,
+  .cloud-2,
+  .cloud-3,
+  .cloud-4 {
+    display: none;
+  }
+}
