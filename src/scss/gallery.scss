@@ -80,18 +80,20 @@
 
 .swiper-button-next {
   right: 17px;
-  background-image: url('../img/galery/right.png');
+  background-image: url('../img/galery/right@2x.png');
 
   @include media(mobile) {
+    background-image: url('../img/galery/right.png');
     right: 0px;
   }
 }
 
 .swiper-button-prev {
   @include media(mobile) {
+    background-image: url('../img/galery/left.png');
     right: 0px;
   }
-  background-image: url('../img/galery/left.png');
+  background-image: url('../img/galery/left@2x.png');
 }
 
 .swiper-button-next:hover {

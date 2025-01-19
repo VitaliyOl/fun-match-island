@@ -26,25 +26,6 @@
 }
 
 @include media(desktop) {
-  .swiper-container-reviews {
-    display: none;
-  }
-}
-
-.reviews-grid {
-  position: relative;
-
-  @include media(mobile) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: row;
-    overflow-x: auto;
-  }
-}
-
-@include media(desktop) {
   .review-card.vertical.card1 {
     position: absolute;
     top: 10px;
@@ -189,11 +170,105 @@
   }
 }
 
+@include media(desktop) {
+  .slick-slider {
+    display: none;
+  }
+}
+
+@include media(mobile) {
+  .ghost {
+    display: none;
+  }
+}
+
 @include media(mobile) {
   .cloud-1,
   .cloud-2,
   .cloud-3,
   .cloud-4 {
-    display: none;
+    display: none !important;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+}
+
+.slick-prev,
+.slick-next {
+  width: 74px;
+  height: 40px;
+  z-index: 10;
+  top: 99%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  transition: none;
+  transform: none;
+  border: none;
+}
+
+.slick-prev {
+  left: -10px;
+  background-image: url('../img/galery/left.png');
+}
+
+.slick-next {
+  right: -10px;
+  background-image: url('../img/galery/right.png');
+}
+
+.slick-prev:focus,
+.slick-prev:hover {
+  transform: none;
+  background-size: 100%;
+
+  background-image: url('../img/galery/leftActive.png');
+}
+
+.slick-next:focus,
+.slick-next:hover {
+  transform: none;
+  background-size: 100%;
+  background-image: url('../img/galery/rightActive.png');
+}
+
+.slick-dots li button:before {
+  content: '';
+}
+
+.slick-dots {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -32px;
+}
+
+.slick-dots li button {
+  width: 16px;
+  height: 16px;
+  background-color: #f3be00;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  width: 24px;
+  height: 24px;
+  background-color: #fb8404;
+}
+
+@media (max-width: 1199px) {
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slick-dots li.slick-active button {
+    width: 16px;
+    height: 16px;
   }
 }
