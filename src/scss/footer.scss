@@ -22,18 +22,18 @@
   flex-direction: column;
 
   @media screen and (min-width: 1200px) {
-    width: 407px;
+    width: 434px;
   }
 }
 
 .footer-inner {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
   margin-bottom: 16px;
 
   @media screen and (min-width: 1200px) {
-    gap: 120px;
+    gap: 110px;
     margin-bottom: 32px;
   }
 }
@@ -41,7 +41,7 @@
 .policy,
 .service {
   text-decoration: underline;
-  font-family: "Mali", sans-serif;
+  font-family: 'Mali', sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #000;
@@ -50,6 +50,7 @@
   &:hover,
   &:active {
     color: #f3be00;
+    transform: scale(0.95);
   }
 
   @media screen and (min-width: 1200px) {
@@ -58,7 +59,7 @@
 }
 
 .reserved {
-  font-family: "Mali", sans-serif;
+  font-family: 'Mali', sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
