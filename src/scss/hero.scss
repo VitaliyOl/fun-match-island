@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   margin-top: 38px;
-  background: url('../img/hero/hero-bg@1x.png') no-repeat center center;
+  background: url('/img/hero/hero-bg@1x.png') no-repeat center center;
   background-size: 287px 279px;
 
   &::before {
@@ -16,7 +16,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background: url('../img/hero/hero@2x.png') no-repeat center center;
+    background: url('/img/hero/hero@2x.png') no-repeat center center;
     background-size: 1056px 714px;
     margin-top: 114px;
   }

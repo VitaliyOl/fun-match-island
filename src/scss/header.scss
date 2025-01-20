@@ -24,13 +24,13 @@
   .logo {
     @include media(mobile) {
       .logo-img {
-        content: url('../img/logo/logo.png');
+        content: url('/img/logo/logo.png');
       }
     }
     @include media(desktop) {
       .logo-img {
         margin-right: 27px;
-        content: url('../img/logo/logo@2x.png');
+        content: url('/img/logo/logo@2x.png');
       }
     }
   }
