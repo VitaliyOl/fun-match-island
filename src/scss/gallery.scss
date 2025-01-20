@@ -135,6 +135,7 @@
   margin: 0 5px;
   border-radius: 50%;
   transition: all 0.3s ease;
+  opacity: 1 !important;
 
   @include media(mobile) {
     width: 10px;
