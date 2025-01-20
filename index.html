@@ -24,17 +24,18 @@
     />
     <title>Margical</title>
     
-    <script type="module" crossorigin src="/fun-match-island/assets/main-ec3aee53.js"></script>
-    <link rel="stylesheet" href="/fun-match-island/assets/main-1b982958.css">
+    <script type="module" crossorigin src="/fun-match-island/assets/main-81d2da58.js"></script>
+    <link rel="stylesheet" href="/fun-match-island/assets/main-7f76fe24.css">
   </head>
   <body>
     <header class="header">
-  <div class="containerr">
+  <div class="containe">
     <a href="#" class="logo">
       <img src="../img/logo/logo.png" alt="Mergical Logo" class="logo-img" />
     </a>
     <button class="burger-menu" aria-label="Toggle menu">
       <img src="../img/icon_burger.png" alt="Burger Menu Icon" />
+      <img src="../img/close.png" alt="Close Menu Icon" class="close-icon" />
     </button>
     <nav class="nav">
       <ul class="nav-list">
@@ -53,17 +54,38 @@
   </div>
 </header>
 
-    <section class="hero">
-  <div class="containe">
-    <h1>Mergical - Fun Match Island Game</h1>
-    <p>Unleash your magic and rebuild an enchanting island!</p>
-    <a href="#" class="btn"
-      >Start Your Magical Journey - Play Now on Google Play</a
-    >
+    <section id="home" class="hero">
+  <div class="containerr">
+    <div class="hero-wraper">
+      <h1 class="hero-title">Mergical - Fun Match Island Game</h1>
+      <p class="hero-text">
+        Unleash your magic and rebuild an enchanting island!
+      </p>
+      <div class="hero-btn">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.fotoable.mergetown"
+          class="hero-link"
+          target="_blank"
+          ><img
+            class="hero-google-play-img"
+            src="/fun-match-island/images/create-magic/google-play.webp"
+            alt="google play"
+          />
+          <p class="hero-link-text">Download on <span>Google Play</span></p></a
+        >
+      </div>
+    </div>
   </div>
 
   <div class="hero-images">
-    <img src="../img/hero/girl@2x.png" alt="Girl Image" class="hero-girl" />
+    <img
+      src="../img/hero/girl@2x.png"
+      srcset="../img/hero/girl@1x.png 320w, ../img/hero/girl@2x.png 1200w"
+      sizes="(max-width: 1199px) 320px, 100vw"
+      alt="Girl Image"
+      class="hero-girl"
+    />
+
     <img
       src="../img/hero/island@2x.png"
       alt="Island Image"
@@ -73,7 +95,7 @@
 </section>
 
     <main>
-      <section class="container about">
+      <section id="about" class="container about">
   <h2 class="about-title">About the Game</h2>
   <p class="about-text">
     Mergical invites you to a mystical island shrouded in mystery. Once a
@@ -104,7 +126,7 @@
   <img src="/fun-match-island/images/about/note-6.webp" alt="image note" class="about-note" />
 </section>
 
-      <section class="container magical-atmosphere">
+      <section id="magic" class="container magical-atmosphere">
   <h2 class="atmosphere-title">Magical Atmosphere</h2>
   <p class="atmosphere-subtitle">
     The game offers a truly enchanting experience
@@ -177,7 +199,7 @@
   </div>
 </section>
 
-      <section class="container features">
+      <section id="features" class="container features">
   <h2 class="features-title">Features and Benefits</h2>
   <div class="features-card-wrap-one">
     <div class="features-card">
@@ -271,7 +293,7 @@
   </div>
 </section>
 
-      <section class="container create-magic">
+      <section id="create" class="container create-magic">
   <h2 class="create-magic-title">Ready to Create Magic?</h2>
   <p class="create-magic-text">
     Rebuild the island, discoverits secrets, and awaken your inner magician. The
@@ -330,7 +352,7 @@
   <img class="girl" src="/fun-match-island/images/create-magic/girl.webp" alt="girl" />
 </section>
 
-      <section class="container gallery">
+      <section id="gallery" class="container gallery">
   <h1 class="gallery-title">Gallery</h1>
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -383,7 +405,7 @@
   </div>
 </section>
 
-      <section class="container reviews">
+      <section id="reviews" class="container reviews">
   <h2 class="reviews-title">Reviews</h2>
   <div class="ghost">
     <div class="swiper-wraper">
@@ -516,7 +538,7 @@
   </div>
 </section>
 
-      <section class="container faq-section">
+      <section id="faq" class="container faq-section">
   <h2 class="faq-title">FAQ</h2>
   <div class="faq-list">
     <div class="faq-item">
