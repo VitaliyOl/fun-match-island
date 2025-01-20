@@ -213,12 +213,12 @@
 
 .slick-prev {
   left: -10px;
-  background-image: url('../img/galery/left.png');
+  background-image: url('/img/galery/left.png');
 }
 
 .slick-next {
   right: -10px;
-  background-image: url('../img/galery/right.png');
+  background-image: url('/img/galery/right.png');
 }
 
 .slick-prev:focus,
@@ -226,14 +226,14 @@
   transform: none;
   background-size: 100%;
 
-  background-image: url('../img/galery/leftActive.png');
+  background-image: url('/img/galery/leftActive.png');
 }
 
 .slick-next:focus,
 .slick-next:hover {
   transform: none;
   background-size: 100%;
-  background-image: url('../img/galery/rightActive.png');
+  background-image: url('/img/galery/rightActive.png');
 }
 
 .slick-dots li button:before {
