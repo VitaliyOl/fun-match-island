@@ -1,3 +1,9 @@
+.section-privacy{
+  @media screen and (min-width: 1200px) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}}
+
 .btn-goback {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -39,7 +45,8 @@
     font-weight: 400;
     font-size: 48px;
     margin-bottom: 20px;
-    margin-top: 6px;
+    // margin-top: 6px;
+    margin-top: 0;
   }
 }
 
