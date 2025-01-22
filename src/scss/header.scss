@@ -47,12 +47,16 @@
       cursor: pointer;
       transition: transform 0.3s;
 
-      &:hover {
-        transform: scale(1.1);
-      }
+      &.burger-icon {
+        width: 30px;
+        height: 30px;
 
-      &.active {
-        transform: rotate(90deg);
+        &:hover,
+        &:focus,
+        &:hover,
+        &:focus {
+          content: url('../img/burger-hover.png');
+        }
       }
     }
 
@@ -65,6 +69,13 @@
       height: 23px;
       cursor: pointer;
       z-index: 1000;
+
+      &:hover,
+      &:focus,
+      &:hover,
+      &:focus {
+        content: url('../img/close-hover.png');
+      }
     }
 
     @include media(mobile) {
