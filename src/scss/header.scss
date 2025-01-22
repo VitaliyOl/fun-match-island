@@ -13,14 +13,13 @@
 
     @include media(desktop) {
       justify-content: flex-start;
-      margin: 8px 72px;
+      margin-top: 8px;
       width: 1056px;
       height: 114px;
       border-radius: 40px;
       background-color: #0a557a;
       color: white;
       box-shadow: 0 4px 10px rgba(10, 85, 122, 0.25);
-      padding: 8px 30px;
     }
   }
 
