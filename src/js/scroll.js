@@ -16,9 +16,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetId = this.getAttribute('href');
     if (targetId && targetId !== '#' && targetId !== '') {
       const targetElement = document.querySelector(targetId);
+
       if (targetElement) {
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 0;
+
+        console.log('Target offsetTop:', targetElement.offsetTop);
+        console.log('Header height:', headerHeight);
+
         window.scrollTo({
-          top: targetElement.offsetTop - 60,
+          top: targetElement.offsetTop - headerHeight,
           behavior: 'smooth',
         });
       }
