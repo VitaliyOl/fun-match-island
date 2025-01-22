@@ -56,6 +56,12 @@
   content: '';
 }
 
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
