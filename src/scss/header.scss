@@ -1,8 +1,11 @@
 .header {
-  position: fixed;
-  z-index: 1000;
+  display: flex;
+  justify-content: center;
+
   // background: linear-gradient(180deg, #0f6691 0%, #0f6691 63.25%);
   .containe {
+    position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     width: 320px;
@@ -110,10 +113,10 @@
         top: 10%;
         right: 0;
         width: 179px;
-        height: 352px;
+        height: 333px;
         background-color: #a4f9ff;
         padding-left: 16px;
-        padding-top: 50px;
+        padding-top: 36px;
         border-radius: 20px;
 
         .nav-list {
