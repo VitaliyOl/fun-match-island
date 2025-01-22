@@ -1,11 +1,12 @@
 .header {
+  position: sticky; // використовуємо sticky замість fixed
+  top: 0; // забезпечуємо, щоб хедер приклеївся до верху
+  z-index: 1000;
   display: flex;
   justify-content: space-evenly;
 
   // background: linear-gradient(180deg, #0f6691 0%, #0f6691 63.25%);
   .containe {
-    position: fixed;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
     width: 320px;
