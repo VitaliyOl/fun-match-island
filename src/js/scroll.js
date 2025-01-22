@@ -13,10 +13,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const targetElement = document.querySelector(this.getAttribute('href'));
-    window.scrollTo({
-      top: targetElement.offsetTop - 60,
-      behavior: 'smooth',
-    });
+    const targetId = this.getAttribute('href');
+    if (targetId && targetId !== '#' && targetId !== '') {
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 60,
+          behavior: 'smooth',
+        });
+      }
+    }
   });
 });
