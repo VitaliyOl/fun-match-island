@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     width: 320px;
-    padding: 8px 16px 0 16px;
+    padding: 0 16px;
 
     @include media(desktop) {
       justify-content: flex-start;
